@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристический сайт города Хива</title>
+    <link rel="stylesheet" href="/project/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=84db9f50-2a37-4cfe-8810-9496f6d9b841
+&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        // ymaps.ready(init);
+        // function init() {
+        //     var coordinates = [41.378832, 60.362268];
+        //     var myMap = new ymaps.Map("map", {
+        //         center: coordinates, // Координаты центра карты
+        //         zoom: 12
+        //     });
+
+        //     var myPlacemark = new ymaps.Placemark([41.378832, 60.362268], {
+        //         hintContent: 'Метка!',
+        //         balloonContent: 'Это красивая метка'
+        //     });
+
+        //     myMap.geoObjects.add(myPlacemark);
+        // }
+        ymaps.ready(init);
+
+        var myMap1, myMap2;
+
+        function init() {
+            myMap1 = new ymaps.Map("map", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+
+            myMap2 = new ymaps.Map("map2", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map3", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map4", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map5", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map6", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map7", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map8", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map9", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map10", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map11", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+            myMap2 = new ymaps.Map("map12", {
+                center: [41.378832, 60.362268],
+                zoom: 12
+            });
+
+            var myPlacemark = new ymaps.Placemark([41.378832, 60.362268], {
+                hintContent: 'Метка!',
+                balloonContent: 'Это красивая метка'
+            });
+
+            myMap1.geoObjects.add(myPlacemark);
+            myMap2.geoObjects.add(myPlacemark);
+        }
+
+        document.getElementById('openModalBtn1').addEventListener('click', function () {
+            document.getElementById('myModal1').style.display = 'block';
+            myMap1.container.fitToViewport();
+        });
+
+        document.getElementById('openModalBtn2').addEventListener('click', function () {
+            document.getElementById('myModal2').style.display = 'block';
+            myMap2.container.fitToViewport();
+        });
+
+        document.getElementById('close1').addEventListener('click', function () {
+            document.getElementById('myModal1').style.display = 'none';
+        });
+
+        document.getElementById('close2').addEventListener('click', function () {
+            document.getElementById('myModal2').style.display = 'none';
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="tour">
+                <h1>ТУР ПО ХИВЕ</h1>
+                <img src="/project/img/Logo_header.png" alt="header-logo">
+            </div>
+
+            <div class="header-info">
+                <a href="#main">Главная</a>
+                <a href="#food">Что поесть</a>
+                <a href="#todo">Чем заняться</a>
+                <a href="#stop">Где остановиться</a>
+            </div>
+            <div class="footer-logo">
+                <img src="/project/img/logo.png" alt="hiva_town_logo">
+            </div>
+        </header>
+        <section>
+            <div class="slider" id="main">
+                <div
+                    class="swiffy-slider slider-nav-caret slider-nav-visible slider-nav-animation slider-nav-animation-fadein slider-nav-animation-slow">
+                    <ul class="slider-container">
+                        <li><img src="/project/img/photo1.jpg" style="max-width: 100%;height: auto;" class="photo1">
+                        </li>
+                        <li><img src="/project/img/photo2.jpg" style="max-width: 100%;height: auto;" class="photo2">
+                        </li>
+                        <li><img src="/project/img/photo3.jpg" style="max-width: 100%;height: auto;" class="photo3">
+                        </li>
+                    </ul>
+
+                    <button type="button" class="slider-nav"></button>
+                    <button type="button" class="slider-nav slider-nav-next"></button>
+
+                    <div class="slider-indicators">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hiva-description">
+                <h1 class="h1-style">Хива</h1>
+                <h1>Хива – Столица Тюркского мира
+                    Это красивейший город-оазис с древними стенами, минаретами и уникальными глиняными постройками. 
+                    В рамках XI сессии Организации Исламского Сотрудничества (ОИС) в Баку, Хива объявлена туристической
+                    столицей исламского мира 2024 года!</h1>
+                <h1 class="h1-style">Климат</h1>
+                <h1>Климат в Хиве сухой и приближенный к погодным условиям пустынь. Лето жаркое, но ветряное, а зимой
+                    температура очень часто падает ниже 0°С, так что не забудьте теплые вещи! Они Вам пригодятся</h1>
+                <div class="food">
+                    <h1 class="h1-main" id="food">ЧТО ПОЕСТЬ?<h1>
+                            <h1 class="h1-style">Кухня</h1>
+                            <h1>Характерными особенностями узбекской национальной кухни является высокая калорийность,
+                                использование большого количества масла и сала, а также специй, приправ и зелени.
+                                Ассортимент блюд, ровно как и напитков — весьма широк. В почете — баранина, говядина,
+                                конина, мясо коз, верблюдов и нежирной птицы. Рецепты блюд меняются от региона к региону
+                                и попробовав одно блюдо в разных городах Вы удивитесь на сколько варьируется вкус!</h1>
+                </div>
+                <div class="grid-food">
+                    <div class="card food1">
+                        <button class="open-dialog" id="openModalBtn1">
+                            <img src="/project/img/food/food1.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal1" class="modal">
+                            <div class="modal-content">
+                                <span class="close1">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Шивит ош</h1>
+                                    <p class="p-modal">Шивит ош — это традиционное узбекское блюдо, особенно популярное
+                                        в Хорезме. Основные ингредиенты включают домашнюю лапшу, в которую добавляется
+                                        укроп, что придает ей зеленый цвет. Лапша подается с мясной подливкой,
+                                        приготовленной из говядины или баранины, и картофелем.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food2">
+                        <button class="open-dialog" id="openModalBtn2">
+                            <img src="/project/img/food/food2.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close2">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Тухум-барак</h1>
+                                    <p class="p-modal">Кухня Хорезма одна из самых необычных в Узбекистане за счет того,
+                                        что природные условия там довольно сложные. Очень
+                                        часто можно встретить одно необычное блюдо... Оно называется тухум-барак, что
+                                        дословно переводится как варенное яйцо.
+                                        Что необычного в этом, спросите Вы? Готовое блюдо по форме напоминает вареники а
+                                        все необычное заключается в способе его
+                                        приготовления. Тесто заполняется сырым яйцом и очень быстро помещаются в печь,
+                                        чтоб не успели потечь. Говорят, что
+                                        именно это блюдо готовила ханам перед посещением гаремов.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food3">
+                        <button class="open-dialog" id="openModalBtn3">
+                            <img src="/project/img/food/food3.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal3" class="modal">
+                            <div class="modal-content">
+                                <span class="close3">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Казан-кабоб</h1>
+                                    <p class="p-modal">Что такое узбекский казан-кабоб? Обжаренное до хрустящей корочки
+                                        мясо с обжаренной до золотого цвета в масле и жире
+                                        из-под мяса некрупной картошкой. А мясо предварительно замариновано в сухом или
+                                        кислом маринаде.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food4">
+                        <button class="open-dialog" id="openModalBtn4">
+                            <img src="/project/img/food/food4.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal4" class="modal">
+                            <div class="modal-content">
+                                <span class="close4">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Лепешка в тандыре</h1>
+                                    <p class="p-modal">Лепешка в тандыре – это традиционный «азиатский хлеб», любимый
+                                        народами всех национальностей. Он округлой формы и
+                                        ярко-желтого цвета. Прекрасно сочетается со многими блюдами. Такие лепешки имеют
+                                        особый аромат и неповторимый вкус
+                                        свежей хрустящей корочки. После выпекания «тандырный хлеб» получается воздушным
+                                        и мягким.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food5">
+                        <button class="open-dialog" id="openModalBtn5">
+                            <img src="/project/img/food/food5.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal5" class="modal">
+                            <div class="modal-content">
+                                <span class="close5">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Узбекский плов</h1>
+                                    <p class="p-modal">Узбекский плов – блюдо из мяса, риса, лука, моркови и специй –
+                                        включен в список нематериального культурного наследия
+                                        ЮНЕСКО. Также узбекский плов вошел в Книгу рекордов Гиннесса. Плов есть на любом
+                                        узбекском празднике, даже если его
+                                        хозяин другой национальности. Есть порядка 200 видов плова и тысяча рецептов.
+                                    </p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food6">
+                        <button class="open-dialog" id="openModalBtn6">
+                            <img src="/project/img/food/food6.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal6" class="modal">
+                            <div class="modal-content">
+                                <span class="close6">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Люля-кебаб по-узбекски</h1>
+                                    <p class="p-modal">Люля-кебаб по-узбекски — разновидность знаменитого кавказского
+                                        блюда. Готовят его в этой стране, чаще всего, из мяса
+                                        молодого барашка с добавлением курдючного жира, молотой паприки, черного перца и
+                                        семян кинзы.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food7">
+                        <button class="open-dialog" id="openModalBtn7">
+                            <img src="/project/img/food/food7.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal7" class="modal">
+                            <div class="modal-content">
+                                <span class="close7">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Ханум</h1>
+                                    <p class="p-modal">Ханум - это рулет из тонкого теста, который готовится на пару и
+                                        часто подается с обжаренными овощами, мясом и зеленью.
+                                        Блюдо обычно приправлено специями и имеет насыщенный вкус, сочетая мягкость
+                                        теста и ароматные начинки. Ханум часто
+                                        украшают свежей зеленью и подают с соусами или маринованными овощами.
+                                    </p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map7"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food8">
+                        <button class="open-dialog" id="openModalBtn8">
+                            <img src="/project/img/food/food8.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal8" class="modal">
+                            <div class="modal-content">
+                                <span class="close8">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Нарын или бешбармам</h1>
+                                    <p class="p-modal">Это традиционное блюдо, которое состоит из тонко нарезанного
+                                        вареного мяса (обычно баранины или говядины) и лапши.
+                                        Бешбармак, что переводится как "пять пальцев", подается с мясным соусом и часто
+                                        украшается свежей зеленью. Это сытное и
+                                        ароматное блюдо является важной частью узбекской кулинарной традиции.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food9">
+                        <button class="open-dialog" id="openModalBtn9">
+                            <img src="/project/img/food/food9.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal9" class="modal">
+                            <div class="modal-content">
+                                <span class="close9">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Казан-кебаб</h1>
+                                    <p class="p-modal">Казан-кебаб представляет собой мясное блюдо, которое готовится в
+                                        казане (большом казане) на открытом огне. Основными
+                                        ингредиентами являются мясо (обычно баранина или говядина), нарезанные овощи,
+                                        такие как картофель и морковь, и иногда
+                                        добавляются макароны или лапша. Блюдо приправляется специями и тушится до
+                                        готовности, приобретая насыщенный аромат и
+                                        вкус.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map9"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food10">
+                        <button class="open-dialog" id="openModalBtn10">
+                            <img src="/project/img/food/food10.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal10" class="modal">
+                            <div class="modal-content">
+                                <span class="close10">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Капуста с мясом</h1>
+                                    <p class="p-modal">Это традиционное блюдо готовится из тушеного мяса (обычно
+                                        баранины или говядины) с капустой и другими овощами. Блюдо
+                                        готовится путём медленного тушения, что позволяет мясу стать мягким и ароматным,
+                                        а капусте – пропитаться соками и
+                                        специями, придающими блюду насыщенный вкус.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food11">
+                        <button class="open-dialog" id="openModalBtn11">
+                            <img src="/project/img/food/food11.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal11" class="modal">
+                            <div class="modal-content">
+                                <span class="close11">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Хорезмская пахлава</h1>
+                                    <p class="p-modal">Хорезмская пахлава – это традиционный узбекский десерт, который
+                                        представляет собой многослойный пирог из тонкого теста,
+                                        пропитанный сиропом и начиненный орехами. Часто пахлава украшается половинками
+                                        грецкого ореха. Этот сладкий и ароматный
+                                        десерт является популярным лакомством на праздниках и семейных торжествах в
+                                        Узбекистане.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map11"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card food12">
+                        <button class="open-dialog" id="openModalBtn12">
+                            <img src="/project/img/food/food12.png" alt="">
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div id="myModal12" class="modal">
+                            <div class="modal-content">
+                                <span class="close12">&times;</span>
+                                <div class="width">
+                                    <h1 class="h1-modal">Лагман</h1>
+                                    <p class="p-modal">Лагман представляет собой густой суп с лапшой, который готовится
+                                        из обжаренного мяса (обычно баранины или говядины), овощей (помидоров,
+                                        болгарского перца, лука, моркови) и различных специй. Основной особенностью
+                                        лагмана является домашняя лапша, которая готовится вручную и добавляется в суп в
+                                        конце приготовления. Блюдо обладает насыщенным вкусом и ароматом, благодаря
+                                        комбинации свежих ингредиентов и приправ.</p>
+                                    <div class="modal-positioning">
+                                        <div class="text-positioning">
+                                            <h1 class="h1-modal">Где попробовать в Хиве:</h1>
+                                            <p class="p-modal">Ресторан "Медресе Аминхон" (Madrasah Aminxon Restaurant)
+                                            </p>
+                                        </div>
+                                        <div class="map" id="map12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="whatToDo">
+                    <h1 class="h1-main" id="todo">ЧЕМ ЗАНЯТЬСЯ?</h1>
+                    <h1 class="h1-style">Фотозоны</h1>
+                    <div class="description1">
+                        <h1>Неотъемлемая часть каждого путешествия — это фотографии! Ведь именно благодаря им можно
+                            сохранить воспоминания о незабываемых моментах и красоте мест, которые вы посетили. Мы
+                            познакомим Вас с самыми красивыми и живописными уголками этого города, где Вы сможете
+                            сделать самые лучшие кадры. Независимо от того, любите ли вы фотографировать архитектуру,
+                            природу или атмосферу улиц, здесь вы найдете множество мест, которые удивят и вдохновят вас.
+                            Готовьтесь пополнять альбом потрясающими снимками!</h1>
+                        <img src="/project/img/desc/desc1.png" alt="">
+                    </div>
+                    <div class="description2">
+                        <img src="/project/img/desc/desc2.png" alt="">
+                        <h1>На стены древней крепости Ичан-Кала можно бесплатно подняться от Северных ворот, известных
+                            как Багча-дарваза. Этот уникальный опыт позволит вам почувствовать дух прошлого и
+                            насладиться потрясающими видами на город. Советуем вам выбрать время ближе к закату, когда
+                            солнце уже не так сильно палит и температура становится более комфортной. В это время дня
+                            свет становится мягким и теплым, создавая идеальные условия для фотографий. Подъем на стены
+                            — это не только возможность сделать великолепные фотографии, но и шанс увидеть город с
+                            высоты и полюбоваться историческими постройками.</h1>
+                    </div>
+                    <div class="description3">
+                        <h1>В Ичан-Кала множество жанровой скульптуры, которая оживляет атмосферу этого древнего города.
+                            Скульптурные композиции, изображающие сценки из средневековой жизни, органично вписаны в
+                            городской пейзаж, добавляя ему уникального колорита и исторической глубины. Эти скульптуры
+                            представляют собой не просто художественные произведения, но и своеобразные окна в прошлое,
+                            позволяющие окунуться в повседневную жизнь людей, живших здесь много веков назад. Все эти
+                            скульптуры можно найти внутри крепостной стены, рядом с ключевыми достопримечательностями
+                            города. Это делает прогулку по Ичан-Кала не только эстетически приятной, но и
+                            познавательной, позволяя лучше понять культуру и историю этого удивительного места.</h1>
+                        <img src="/project/img/desc/desc3.png" alt="">
+                    </div>
+                    <div class="description4">
+                        <img src="/project/img/desc/desc4.png" alt="">
+                        <h1>Это достопримечательность номер один в Хиве. До свержения хивинского хана большевиками в
+                            1920 году Куня-Арк служила резиденцией ханам Хорезма. Здесь находились ханская мечеть,
+                            верховный суд, приёмная – курынишхона (зал для приёмов делегаций и важных персон), пороховой
+                            завод, арсенал, монетный двор, канцелярия, гарем, кухни, конюшни, гауптвахта — в общем,
+                            большое ханское хозяйство. Площадь перед Куня-Арк использовалась для военных парадов и
+                            турниров. Здесь же находились тюрьма (зиндан) и место для казней. Куня-Арк начали строить в
+                            1686‒1688 годах по велению Аранг-хана. В конце XVIII века цитадель была отделена от
+                            Ичан-Кала высокой стеной и стала «городом в городе».</h1>
+                    </div>
+                    <div class="description5">
+                        <h1>Куня-Арк — это достопримечательность номер один в Хиве, и ее богатая история привлекает
+                            множество туристов. До свержения хивинского хана большевиками в 1920 году, Куня-Арк служила
+                            резиденцией ханам Хорезма. Это место не просто впечатляет своей архитектурой, но и
+                            рассказывает о многовековой истории региона.
+                            В Куня-Арк находились важные административные и хозяйственные постройки, такие как ханская
+                            мечеть, верховный суд, приёмная — курынишхона (зал для приёмов делегаций и важных персон),
+                            пороховой завод, арсенал, монетный двор, канцелярия, гарем, кухни, конюшни, и гауптвахта.
+                            Все это составляло большое ханское хозяйство, что подчеркивает значимость этого места в
+                            жизни ханства. Площадь перед Куня-Арк использовалась для проведения военных парадов и
+                            турниров, демонстрируя мощь и организованность ханского войска. Здесь же находились тюрьма
+                            (зиндан) и место для казней, что подчеркивает важность Куня-Арк как центра судебной и
+                            исполнительной власти.
+                        </h1>
+                        <img src="/project/img/desc/desc5.png" alt="">
+                    </div>
+
+                </div>
+                <h1 class="h1-main" id="stop">ГДЕ ОСТАНОВИТЬСЯ?</h1>
+                <div class="whereToStop">
+                    <div class="hotels">
+                        <ul>
+                            <li>
+                                <img src="/project/img/icon.png">
+                                <a href="https://www.booking.com/hotel/uz/silk-road-caravan-sarai.ru.html"
+                                    target="_blank">Caravan Sarai</a>
+                            </li>
+                            <li>
+                                <img src="/project/img/icon.png">
+                                <a href="https://www.booking.com/hotel/uz/asia-samarkand.ru.html?aid=356980&label=gog235jc-1DCAso7gFCDmFzaWEtc2FtYXJrYW5kSDNYA2jCAYgBAZgBIbgBF8gBDNgBA-gBAYgCAagCA7gCyd2XswbAAgHSAiQ3NTljYjQzNS01NWU5LTRmOTktYjgxZS0zMDdhMzA3OTFjOWHYAgTgAgE&sid=5868122233599c9df795d8164adecdbc&dist=0&keep_landing=1&sb_price_type=total&type=total&"
+                                    target="_blank">Hotel Asia Khiva</a>
+                            </li>
+                            <li>
+                                <img src="/project/img/icon.png">
+                                <a href="https://www.booking.com/hotel/uz/qosha-darvoza.ru.html" target="_blank">Qosha
+                                    Darvoza</a>
+                            </li>
+                            <li>
+                                <img src="/project/img/icon.png">
+                                <a href="https://www.booking.com/hotel/uz/khiva-angarik-darvoza.ru.html"
+                                    target="_blank">Khiva Angarik Darvoza</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hotels-photo">
+                        <img src="/project/img/QR.png" alt="">
+                    </div>
+                </div>
+        </section>
+    </div>
+    <script src="/project/app.js"></script>
+</body>
+
+</html>
